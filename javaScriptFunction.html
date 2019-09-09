@@ -1,0 +1,79 @@
+<!--
+1. no argument no return
+2. no argument with return
+3. with argument with return
+4. with argument no return
+ 
+
+arguments/parameters 
+
+(value pass)
+	min one /more then one
+(p1,p2,p3)
+
+
+Return
+		only one return keyword in any function 
+		
+
+-->
+<html>
+<head>
+<script>
+/* 1. no argument no return */
+
+function fun(){
+//alert("hello")
+console.log("Hello")
+
+var x=fun1();
+console.log(x);
+}
+/*2. no argument with return */
+
+function fun1(){
+ var c= 10+30;
+ var d=40-20;
+return c;
+console.log( d);
+
+}
+/* 3. with argument with return */
+
+function add(a,b){
+c= a+b;
+return c
+
+}
+/* 3. with argument no return */
+
+function show(x,y){
+
+var x= add(x,y);
+console.log(x);
+}
+
+function table(x){
+ x= parseInt(x);
+ if(x=="NaN"){
+ 
+ }else{
+  for(var i=1;i<11;i++){
+    console.log(x + "*" + i + "=" + i*x);
+  }
+}
+}
+</script>
+</head>
+<body>
+
+<button onclick="fun();"> Click Fun </button>
+<button onclick="fun1();"> Click Fun1 </button>
+<button onclick="show(10,20);"> Click For add </button>
+<button onclick="table(5);"> Click For Table </button>
+<input type="text" onkeyup="table(this.value);" /> 
+
+
+
+</body>
+</html>
