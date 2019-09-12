@@ -1,0 +1,52 @@
+<html>
+<head>
+<script>
+function addNew(a,b,d){
+
+var c;
+
+c= a+b+d;
+console.log(c);
+
+}
+
+function add(a,b){
+console.log(1);
+var c;
+console.log(2);
+c= a+b;
+console.log(c);
+document.getElementById("res").innerHTML=c;
+document.getElementById("res").style.color="red";
+document.getElementById("res").style.border="1px solid red";
+}
+function validate(){
+	var x= document.getElementById("username").value;
+	console.log(x);
+	if(x==""){
+	document.getElementById("username").style.border="1px solid red";
+	document.getElementById("error").innerHTML="Please Enter The value";
+    document.getElementById("error").style.color="red";
+	}
+	else
+	{
+	console.log(1);
+	}
+	
+}
+</script>
+</head>
+<body>
+
+<div onclick="add(20,30);">Click For add </div> 
+<p id="res">p tag</p>
+
+
+
+
+<input type="text" name="username" id="username" />
+<p id="error"></p>
+<button onclick="validate();" >Validation</button>
+
+</body>
+</html>
