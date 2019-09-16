@@ -1,0 +1,47 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+
+
+<script>
+$(document).ready(function(){
+
+$("#slid1").click(function(){
+$(this).hide();
+$("#slid2").show();
+$("#slid3").hide()
+
+});
+$("#slid2").click(function(){
+
+$(this).hide();
+$("#slid3").show();
+$("#slid1").hide()
+});
+
+$("#slid3").click(function(){
+$(this).hide();
+$("#slid1").show();
+$("#slid2").hide()
+
+});
+
+});
+
+
+
+</script>
+<style>
+.myimg{width:250px;height:250px;}
+.sl1{display:none;}
+</style>
+</head>
+<body>
+<div id="slid1"><img  class="myimg" src="image-250nw-452800699.jpg" />   </div>
+<div id="slid2" class="sl1"><img class="myimg" src="ProjectDoc.png" />   </div>
+<div id="slid3" class="sl1"><img class="myimg" src="independencOffers.jpg" />   </div>
+
+
+</body>
+
+</html>
