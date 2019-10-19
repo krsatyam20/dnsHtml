@@ -1,0 +1,138 @@
+jQuery Effects
+	hide()
+	show()
+	toggle()
+		Syn:$(selector).toggle();  
+		
+	fadeIn()
+		Syn: $(selector).fadein();  
+		Ex:$("#div1").fadeIn();  
+           $("#div2").fadeIn("slow");  
+           $("#div3").fadeIn(3000); 
+	fadeOut()
+		Syn:$(selector).fadeOut();  
+		
+	fadeToggle()
+		Syn:$(selector).fadeToggle();
+		
+	fadeTo():fadeTo() method is used to fading to a given opacity.
+		Syn:$(selector).fadeTo(speed, opacity);  
+	
+	slideDown()
+		Syn:$(selector).slideDown(speed);  
+	slideUp()
+		Syn:$(selector).slideUp(speed); 
+		
+	slideToggle()
+		Syn:$(selector).slideToggle(speed);  
+		
+	animate():animate() method provides  create custom animations.
+	
+	delay()
+		Syn:$(selector).delay (speed, action)
+			$("#div1").delay("slow").fadeIn();  
+			
+			
+			
+jQuery HTML/CSS
+html()
+	$("p").html("Hello <b>kumar</b>");
+	
+text()
+	 $("p").text("Hello Student ");  
+
+val()
+
+css()
+	$("p").css({"background-color": "yellow", "font-size": "200%"});  
+	
+before()
+	$("p").before("<p><b>Hello</b></p>"); 
+	
+prepend()
+	 $("p").prepend("<b>Prepended text</b>. ");    
+
+after()
+	$("p").after("<p><b>Hello </b></p>");  
+insertAfter()
+	 $("<span><b>Hello</b></span>").insertAfter("p");  
+append()
+		$("p").append(" <b>Newly added text</b>.");  
+appendTo()
+		 $("<span><b>Newly added text</b></span>").appendTo("p");  
+	 
+clone()
+	 $("p").clone().appendTo("body");  
+remove()
+	$( "p" ).remove();  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+empty()
+detach()
+scrollTop()
+attr()
+prop()
+offset()
+position()
+addClass()
+hasClass()
+toggleClass()
+width()
+height()
+innerWidth()
+innerHeight()
+outerWidth()
+outerHeight()
+wrap()
+wrapInner()
+wrapAll()
+unwrap()
+
+
+jQuery Form
+jQuery serialize()
+jQuery serializeArray()
+
+
+jQuery Events
+
+jQuery click()
+jQuery bind()
+jQuery blur()
+jQuery focus()
+jQuery select()
+jQuery change()
+jQuery submit()
+jQuery keydown()
+jQuery keypress()
+jQuery keyup()
+jQuery mouseenter()
+jQuery mouseleave()
+jQuery hover()
+jQuery mousedown()
+jQuery mouseup()
+jQuery mouseover()
+jQuery mouseout()
+jQuery load()
+jQuery unload()
+jQuery delegate()
